@@ -1,0 +1,24 @@
+<div class="bg-white p-4 rounded shadow flex items-center justify-between card-hover-outline">
+    <div>
+        <div class="font-semibold text-base">{{ task.title }}</div>
+        <div class="text-sm text-gray-500">{{ task.description }}</div>
+    </div>
+    <div class="flex items-center gap-2">
+        <span class="priority-chip flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-medium capitalize"
+              [ngClass]="task.isCompleted ? 'bg-green-100 text-green-700 border-green-300' : priorityColor">
+            <span *ngIf="!task.isCompleted"
+                  class="material-icons text-base align-middle {{ priorityColor }}">
+                flag
+            </span>
+            <span *ngIf="task.isCompleted"
+                  class="material-icons text-base align-middle text-green-700">
+                check_circle
+            </span>
+            {{ task.isCompleted ? 'Complete' : task.priority }}
+        </span>
+        <input type="checkbox"
+               [checked]="task.isCompleted"
+               (change)="toggleComplete(task)"
+               class="accent-green-600 w-4 h-4 cursor-pointer" />
+    </div>
+</div>

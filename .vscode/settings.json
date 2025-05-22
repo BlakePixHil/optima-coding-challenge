@@ -1,0 +1,68 @@
+{
+    "editor.wordSeparators": "`~!@%^&*.()=+[{]}\\|;:'\",<>/?",
+    "editor.formatOnPaste": true,
+    "js/ts.implicitProjectConfig.experimentalDecorators": true,
+    "workbench.editor.pinnedTabSizing": "shrink",
+    "editor.autoIndent": "full",
+    "workbench.editor.wrapTabs": true,
+    "terminal.integrated.tabs.location": "right",
+    "explorer.autoRevealExclude": {
+        "**/dist": true
+    },
+    "search.exclude": {
+        "*.js": true,
+        "*.txt": true,
+        "**/dist": true,
+        "**/node_modules": false
+    },
+    "html-css-class-completion.includeGlobPattern": "**/*.{css,html,scss}",
+    "workbench.colorCustomizations": {
+        "tab.activeBackground": "#162b49",
+        "tab.activeForeground": "#ffffff",
+        "tab.activeBorderTop": "#00aeff",
+        "tab.border": "#f8e0ff",
+        "editorGroupHeader.tabsBackground": "#1d4358",
+        "editorGroupHeader.border": "#fffbd6"
+    },
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/*/**": true
+    },
+    "editor.find.addExtraSpaceOnTop": true,
+    "editor.smartSelect.selectLeadingAndTrailingWhitespace": false,
+    "files.trimTrailingWhitespace": true,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": null,
+    "typescript.format.placeOpenBraceOnNewLineForControlBlocks": true,
+    "typescript.format.placeOpenBraceOnNewLineForFunctions": true,
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features",
+        "editor.tabSize": 4
+    },
+    "[javascript]": {
+        "editor.tabSize": 4
+    },
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "html.format.wrapAttributesIndentSize": null,
+    "html.format.wrapAttributes": "force-aligned",
+    "html.format.wrapLineLength": 0,
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false,
+    "[scss]": {
+        "editor.defaultFormatter": "vscode.css-language-features"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "vscode.css-language-features"
+    },
+    "javascript.format.semicolons": "insert",
+    "typescript.format.semicolons": "insert",
+    "typescript.preferences.quoteStyle": "single",
+    "typescript.preferences.importModuleSpecifier": "non-relative",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "javascript.preferences.importModuleSpecifier": "non-relative",
+}

@@ -1,0 +1,31 @@
+<button class="bg-gray-200 px-3 py-1 rounded hover:bg-gray-300 transition flex items-center gap-2"
+        (click)="toggleDropdown()">
+    <span class="material-icons">filter_list</span>
+    Filter
+    @if (selectedPriority !== 'ALL')
+    {
+    <span class="text-xs text-gray-600 ml-1">({{ selectedPriority }})</span>
+    }
+</button>
+@if (dropdownOpen)
+{
+<div class="relative">
+    <ul class="absolute right-0 mt-2 w-32 bg-white border border-gray-200 rounded shadow z-10">
+        <li>
+            <button class="w-full text-left px-4 py-2 hover:bg-gray-100"
+                    (click)="selectPriority('ALL')">
+                All
+            </button>
+        </li>
+        @for (priority of priorities; track priority)
+        {
+        <li>
+            <button class="w-full text-left px-4 py-2 hover:bg-gray-100"
+                    (click)="selectPriority(priority)">
+                {{ priority }}
+            </button>
+        </li>
+        }
+    </ul>
+</div>
+}
